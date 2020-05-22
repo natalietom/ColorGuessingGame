@@ -1,5 +1,8 @@
 # Color Guessing Game
 
+## Getting Started
+Download the zip file or clone the repository and after unzipping the repository file, double click "colorGame.html" to begin the guessing game.
+
 ## Learning to recognize the Red-Green-Blue color model
 This interactive game displays RGB followed by a value from 0-255, 0 meaning no color from that primary color, and each value representing an amount of red, green, and blue in that order. The goal is to correctly determine the color through the combination of red, green, and blue among the presented colored squares.
 > Examples of RGB combinations: 
@@ -18,3 +21,9 @@ Once the game begins by clicking a colored square, a guided message will be disp
 
 ### New Colors
 The 3 values are randomly generated and by clicking "NEW COLORS", a new set of colors as well a new RBG will be displayed.
+
+
+### Build With
+* Javascript
+* HTML
+* CSS
