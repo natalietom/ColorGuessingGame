@@ -23,7 +23,7 @@ Once the game begins by clicking a colored square, a guided message will be disp
 The 3 values are randomly generated and by clicking "NEW COLORS", a new set of colors as well a new RBG will be displayed.
 
 
-### Build With
+## Build With
 * Javascript
 * HTML
 * CSS
