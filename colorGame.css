@@ -72,3 +72,62 @@ button:hover{
 	color: white;
 	background: cornflowerblue;
 }
+
+#overlay {
+	position:absolute;
+	top:50vh;
+	left:0px;
+	width:100vw;
+	height:0vh;
+	background:rgba(0,0,0,0.8);
+	z-index:-1;
+	opacity:0;
+	padding:80px 100px;
+	overflow:hidden;
+	box-sizing:border-box;
+	transition: top 500ms ease-in-out,
+		opacity 500ms ease-in-out,
+		height 0ms ease-in-out 500ms;  
+}
+
+#overlay .close-btn {
+	position:absolute;
+	top:20px;
+	right:40px;
+	color:#fff;
+	font-size:40px;
+	font-weight:600	cursor:pointer;
+}
+
+#overlay h2 {
+	text-align: center;
+	background: cornflowerblue;
+	font-size:38px;
+	color:#FFF;
+}
+
+#overlay p {
+	text-align: center;
+	font-size:18px;
+	font-weight: 600;
+	color:#EEE;
+	margin: 25px 0px;
+}
+
+body.activeForm #overlay {
+	z-index:2;
+	opacity:1;
+	top:0px;
+	height:100vh;
+	transition: top 500ms ease-in-out,
+            opacity 500ms ease-in-out,
+            height 0ms ease-in-out 0ms;
+}
+
+.ex1 {
+	color: red;
+}
+
+.ex2 {
+	color: #707070;
+}
