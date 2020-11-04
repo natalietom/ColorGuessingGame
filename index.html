@@ -4,6 +4,7 @@
 	<title>Color Game</title>
 	<link rel="stylesheet" type="text/css" href="colorGame.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 </head>
 <body>
 
@@ -14,6 +15,16 @@
 		<br>
 		Guessing Game
 	</h1>
+	
+	<div id="overlay">
+		<div class="close-btn"><i class="fas fa-times"></i></div>
+		<h2>HOW TO PLAY</h2>
+		<p>A randomly generated set of numbers will appear in the parentheses, each number represents the amount of Red, Green, and Blue, in that order.</p>
+		<p>The greatest amount of each color it can have is 255 and the least amount is 0.</p>
+		<p>By combining the values together, guess and click the possible color in the squares below.</p>
+		<p>Example combinations are: <em>RGB(255, 0, 0)</em> is <span class="ex1">red</span>; <em>RGB(0, 0, 0)</em> is <span class="ex2">black</span>; and <em>RGB(255, 255, 255)</em> is white</p>
+		<p>Try easy mode to narrow the possible colors!</p>
+	</div>
 
 	<div id="stripe">
 		<button id="reset">New Colors</button>
