@@ -7,14 +7,31 @@ let messageDisplay = document.querySelector("#message");
 let h1 = document.querySelector("h1");
 let resetButton = document.querySelector("#reset");
 let modeButtons = document.querySelectorAll(".mode");
+let helpButton = document.querySelector(".help-button");
+let closeButton = document.querySelector(".close-btn");
 
 init();
 
 function init(){
 	//mode buttons event listener
+	overlay();
 	setupModeButtons();
 	setupSquares();
 	reset();
+}
+
+function overlay(){
+	helpButton.addEventListener("click", function(){
+		toggle();
+	});
+
+	closeButton.addEventListener("click", function(){
+		toggle();
+	});
+}
+
+function toggle(){
+	document.body.classList.toggle("activeForm");
 }
 
 function setupModeButtons(){
